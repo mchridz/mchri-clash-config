@@ -1,2 +1,2 @@
-# mchriv2
-vmess
+# mchridz clash config
+my clash config
