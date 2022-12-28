@@ -169,7 +169,7 @@ dns:
       - +.googletagmanager.com
       - +.googletagservices.com
 proxies:
-  - {name: mchridz Koyeb, server: cf-lt.sharecentre.online, port: 443, type: vless, uuid: 7e6a7c21-0953-43ab-94d2-a8bc5bbbb26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: koyeb.mchridz.ml, network: ws, ws-opts: {path: /7e6a7c21-0953-43ab-94d2-a8bc5bbbb26a-vless, headers: {Host: koyeb.mchridz.ml}}}
+  - {name: mchridz Koyeb, server: uicdn.cf, port: 443, type: vless, uuid: 7e6a7c21-0953-43ab-94d2-a8bc5bbbb26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: koyeb.mchridz.ml, network: ws, ws-opts: {path: /7e6a7c21-0953-43ab-94d2-a8bc5bbbb26a-vless, headers: {Host: koyeb.mchridz.ml}}}
   - {name: 「SCP」HK-CF-Gcore 电信优化, server: cf-dx-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}}
   - {name: 「SCP」HK-CF-Gcore 联通优化, server: cf-lt-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}}
   - {name: 「SCP」HK-CF-Gcore 移动优化, server: cm.sylu.cyou, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk.sharecentre.online, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}}
