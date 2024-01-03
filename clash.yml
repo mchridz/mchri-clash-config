@@ -128,7 +128,7 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
-  - name: "[Vless] vlesscf1.mchridz.pp.ua"
+  - name: "[Vless] vlesscftest.mchridz.pp.ua"
     server: skk.moe
     port: 8443
     type: vless
@@ -136,61 +136,27 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: vlesscf1.mchridz.pp.ua
+    servername: vlesscftest.mchridz.pp.ua
     network: ws
     ws-opts:
       path: /?ed=2048
       headers:
-        Host: vlesscf1.mchridz.pp.ua
-    udp: true
-  - name: "[Vless] vlesstestcf.mchridz.pp.ua"
-    server: skk.moe
-    port: 8443
-    type: vless
-    uuid: 77a571fb-4fd2-4b37-8596-1b7d9728bb5c
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vlesstestcf.mchridz.pp.ua
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: vlesstestcf.mchridz.pp.ua
+        Host: vlesscftest.mchridz.pp.ua
     udp: true
 proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - "[Vless] vlesscf1.mchridz.pp.ua"
-      - "[Vless] vlesstestcf.mchridz.pp.ua"
-      - LOAD-BALANCE
+      - "[Vless] vlesscftest.mchridz.pp.ua"
       - BEST-PING
-      - FALLBACK
       - DIRECT
-  - name: LOAD-BALANCE
-    type: load-balance
-    strategy: consistent-hashing
-    url: http://hi.bonds.id/ping
-    interval: 300
-    proxies:
-      - "[Vless] vlesscf1.mchridz.pp.ua"
-      - "[Vless] vlesstestcf.mchridz.pp.ua"
   - name: BEST-PING
     type: url-test
     url: http://hi.bonds.id/ping
     interval: 300
     tolerance: 50
     proxies:
-      - "[Vless] vlesscf1.mchridz.pp.ua"
-      - "[Vless] vlesstestcf.mchridz.pp.ua"
-  - name: FALLBACK
-    type: fallback
-    url: http://hi.bonds.id/ping
-    interval: 300
-    proxies:
-      - "[Vless] vlesscf1.mchridz.pp.ua"
-      - "[Vless] vlesstestcf.mchridz.pp.ua"
+      - "[Vless] vlesscftest.mchridz.pp.ua"
 rule-providers:
   clash:
     type: http
